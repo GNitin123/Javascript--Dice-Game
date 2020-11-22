@@ -1,0 +1,154 @@
+body{
+    background-image: linear-gradient(to right,rgba(126,213,111,0.7),rgba(40,180,133,0.7));
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#section
+{
+    display:grid;
+    grid-template-columns: repeat(2,500px);
+    grid-auto-rows: 500px ;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right:80px;
+}
+.player-0-section, .player-1-section
+{
+    background-color:  rgb(236, 140, 140);
+    opacity: .9;
+}
+.player-0-section
+{
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+}
+
+.player-1-section
+{
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+.player
+{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 300%;
+}
+
+.scores
+{
+    text-align: center;
+    font-size: 600%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(240, 176, 16);
+}
+
+.active-player
+{
+    opacity: 1;
+    background-color:  rgb(246, 101, 101);
+}
+.current-score
+{
+    background-color: rgb(235, 39, 39);
+    width: 25%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.new-game
+{
+    position: absolute;
+    top: 100px;
+    left: 650px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: all 0.2s;
+}
+
+.new-game:active {
+    transform: translate(-50%, 5px);
+}
+.new-game:focus {
+    outline: none;
+}
+
+.roll-dice
+{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 430px;
+    left: 650px;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+.roll-dice:active,.hold:active
+{
+    transform: translate(-50%,5px);
+}
+
+.hold
+{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 480px;
+    left: 650px;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+.roll-dice:focus,.roll-dice:active,.hold:focus
+{
+    outline: none;
+}
+.dice
+{
+    width: 80px;
+    position: absolute;
+    top: 250px;
+    left: 610px;
+}
+
+.current
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    font-weight: 500;
+    color:black;
+}
+
+.winner
+{
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 1;
+}
+
+#final-score
+{
+    position: relative;
+    top: 20px;
+    left: -85px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width:170px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#final-score:focus
+{
+    outline: none;
+}
